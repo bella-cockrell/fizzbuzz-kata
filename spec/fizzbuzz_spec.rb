@@ -7,3 +7,8 @@ context "when I fizzbuzz the numbers 1, 2, 4" do
         expect(fizzbuzz(4)).to eq("4")
     end
 end
+context "when I fizzbuzz the number 3" do
+    it "I get back 'fizz'" do
+        expect(fizzbuzz(3)).to eq("fizz")
+    end
+end
