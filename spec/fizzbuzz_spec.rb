@@ -19,7 +19,8 @@ context "when I fizzbuzz the number 3, 6, 9 or 12" do
             3 => "fizz",
             6 => "fizz",
             9 => "fizz", 
-            12 => "fizz"
+            12 => "fizz",
+            303 => "fizz"
         }
         fizz_numbers.each do |input, output|
             expect(fizzbuzz(input)).to eq(output)
@@ -30,7 +31,10 @@ context "when I fizzbuzz the number 5" do
     it "I get back 'buzz'" do
         buzz_numbers = {
             5 => "buzz",
-            10 => "buzz"
+            10 => "buzz",
+            20 => "buzz",
+            25 => "buzz",
+            250 => "buzz"
         }
         buzz_numbers.each do |input, output|
         expect(fizzbuzz(input)).to eq(output)
